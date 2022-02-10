@@ -1,5 +1,15 @@
 .navbar{
+    width: 100%;
     color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3) 50%);
+
+    &.scrolled{
+        background-color: var(--main-color);
+    }
 
     .container{
         padding: 0 50px;
@@ -25,12 +35,37 @@
     .right{
         display: flex;
         align-items: center;
+        .icon{
+            margin: 0px 15px;
+            cursor: pointer;
+        }
+
         img{
             width: 30px;
             height: 30px;
             border-radius: 5px;
             object-fit: cover;
             cursor: pointer;
+        }
+
+        .profile{
+            .options{
+                display: none;
+                background-color: var(--main-color);
+            }
+
+            span{
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            &:hover{
+                .options{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                }
+            }
         }
     }
     }
