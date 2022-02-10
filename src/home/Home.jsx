@@ -7,7 +7,8 @@ const home = () => {
   return (
       <div className='home'>
       <Navbar />
-      <Featured type="series"/>
+      <Featured type="series" />
+      abcd
     </div>
   )
 }
