@@ -21,10 +21,10 @@ return (
     <div className="itemInfo">
 
       <div className="icons">
-        <PlayCircleFilled />
-        <AddCircle />
-        <ThumbUpAltOutlined />
-        <ThumbDownOutlined />
+            <PlayCircleFilled className="icon"/>
+            <AddCircle className="icon"/>
+            <ThumbUpAltOutlined className="icon"/>
+            <ThumbDownOutlined className="icon"/>
       </div>
 
       <div className="itemInfoTop">
